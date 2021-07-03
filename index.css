@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+html,body{
+    background-color: rgba(90,90, 90);
+    height: 100%;
+}
+.wrapper{
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    /* overflow: hidden; */
+}
+.wrapper .header{
+    border-radius: 10px 10px 0 0;
+    background-color: grey;
+    text-align: center;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.wrapper .content{
+    overflow: auto;
+    height: calc(100% - 110px);
+    line-height: 40px;
+    padding: 10px;
+}
+.wrapper .content .mine{
+    float: right;
+    width: 400px;
+}
+.wrapper .content .mine img{
+    margin-left: 10px;
+    float: right;
+}
+.wrapper .content .mine .text{
+    padding: 2px 8px;
+    background-color: greenyellow;
+    float: right;
+}
+.wrapper .content .robot{
+    float: left;
+    width: 400px;
+}
+.wrapper .content .robot img{
+    margin-right: 10px;
+    float: left;
+}
+.wrapper .content .robot .text{
+    padding: 2px 8px;
+    background-color: rgba(220, 220, 220);
+    float: left;
+}
+
+.wrapper .content img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.wrapper .content .text{
+    max-width: 250px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.wrapper .inp{
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    font-size: 0;
+    text-align: center;
+    background-color: rgba(200, 200, 200);
+}
+
+.wrapper .inp input{
+    width: calc(100% - 80px);
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.inp button{
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}

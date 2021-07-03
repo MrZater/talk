@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- 
+        1. jq里的ajax
+        2. 实现聊天窗口
+
+        接口地址：http://temp.duyiedu.com/api/chat
+        请求方式：GET
+        请求参数：text=信息
+
+
+        jsonp:json and padding
+     -->
+    <div class="wrapper">
+        <h4 class="header">Mr</h4>
+        <div class="content">
+        </div>
+        <div class="inp">
+            <input type="text" name="" id="word">
+            <button id="submit">发送</button>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        /*
+           ajax:受到同源策略的限制
+               同源： 协议 域名 端口号 全部相同
+           如果不同源就需要跨域处理
+               1. jsonp:需要服务端的支持，在数据外边包裹一层
+               2. CORS跨域
+        */
+        // function dealData(res) {
+        //     console.log(res)
+        // }
+        // $.ajax({
+        //     url: 'http://localhost:3333/data',
+        //     type: 'GET',
+        //     data: {
+        //         page: 1,
+        //         size: 10,
+        //         cb: 'dealData'
+        //     },
+        //     //请求头信息
+        //     headers:{
+
+        //     },
+        //     //请求发出时会触发的函数
+        //     beforeSend: function (xhr, data) {
+        //         console.log(xhr, data)
+        //     },
+        //     // 希望获取到的数据类型
+        //     dataType: 'jsonp',
+        //     // 成功的回调函数
+        //     success: function (res) {
+        //         console.log('success', res)
+        //     },
+        //     error: function (err) {
+        //         console.log('error', err)
+        //     }
+        // })
+    </script>
+</body>
+
+</html>
